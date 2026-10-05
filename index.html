@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>মেসার্স রহিমা ট্রেডার্স | প্রোঃ মোঃ রোকনুজ্জামান রব | পাথর ও বালু</title>
+<title>মেসার্স রহিমা ট্রেডার্স | প্রোঃ মোঃ রোকনুজ্জামান রব পাথর ও বালু</title>
 
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
@@ -325,7 +325,6 @@ grid-template-columns:1fr
 
 <div class="logo">
 মেসার্স রহিমা ট্রেডার্স
-প্রোঃ মোঃ রোকনুজ্জামান রব
 </div>
 
 <nav>
@@ -349,9 +348,9 @@ grid-template-columns:1fr
 </div>
 
 <h1>মেসার্স রহিমা ট্রেডার্স</h1>
-
+ প্রোঃ মোঃ রোকনুজ্জামান রব
 <p>
-বুড়িমারী, পাটগ্রাম থেকে পাথর ও বালু সরবরাহের বিশ্বস্ত ব্যবসায়িক ঠিকানা।
+ বুড়িমারী, পাটগ্রাম থেকে পাথর ও বালু সরবরাহের বিশ্বস্ত ব্যবসায়িক ঠিকানা।
 </p>
 
 <div class="buttons">
@@ -583,4 +582,359 @@ placeholder="01XXXXXXXXX">
 
 <select id="quantity">
 
-<option
+<option value="১ টন">১ টন</option>
+<option value="৫ টন">৫ টন</option>
+<option value="১০ টন">১০ টন</option>
+<option value="২০ টন">২০ টন</option>
+<option value="১ ট্রাক">১ ট্রাক</option>
+<option value="২ ট্রাক">২ ট্রাক</option>
+<option value="৫ ট্রাক">৫ ট্রাক</option>
+<option value="১০ ট্রাক">১০ ট্রাক</option>
+<option value="অন্যান্য">অন্যান্য</option>
+
+</select>
+
+</div>
+
+
+<!-- LOCATION -->
+
+<div class="form-group">
+
+<label>📍 সরবরাহের স্থান</label>
+
+<input
+type="text"
+id="location"
+placeholder="যেখানে পণ্য লাগবে">
+
+</div>
+
+
+<!-- MESSAGE -->
+
+<div class="form-group">
+
+<label>📝 অতিরিক্ত তথ্য</label>
+
+<textarea
+id="message"
+placeholder="আপনার প্রয়োজন বা প্রশ্ন লিখুন"></textarea>
+
+</div>
+
+
+<button
+class="order-btn"
+onclick="sendOrder()">
+
+💬 WhatsApp-এ অর্ডার পাঠান
+
+</button>
+
+</div>
+
+</section>
+
+
+<!-- CTA -->
+
+<section class="section">
+
+<div class="cta">
+
+<h2>পাথর বা বালুর দরকার?</h2>
+
+<p>
+দাম ও সরবরাহের তথ্য জানতে এখনই যোগাযোগ করুন।
+</p>
+
+<div class="buttons">
+
+<a class="btn primary"
+href="https://wa.me/8801715710115"
+target="_blank">
+💬 WhatsApp করুন
+</a>
+
+<a class="btn secondary"
+href="https://www.facebook.com/share/1DNaUmCP2K/"
+target="_blank">
+📘 Facebook Page
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section class="contact">
+
+<div class="section" id="contact">
+
+<h2 class="title">যোগাযোগ করুন</h2>
+
+<p class="subtitle">
+অর্ডার, দাম ও সরবরাহ সম্পর্কে জানতে যোগাযোগ করুন।
+</p>
+
+<div class="contact-grid">
+
+<div class="contact-card">
+
+<div class="icon">📱</div>
+
+<h3>WhatsApp</h3>
+
+<p>
+<a href="https://wa.me/8801715710115"
+target="_blank">
++8801715710115
+</a>
+</p>
+
+</div>
+
+
+<div class="contact-card">
+
+<div class="icon">📘</div>
+
+<h3>Facebook Page</h3>
+
+<p>
+<a href="https://www.facebook.com/share/1DNaUmCP2K/"
+target="_blank">
+আমাদের Facebook Page
+</a>
+</p>
+
+</div>
+
+
+<div class="contact-card">
+
+<div class="icon">📍</div>
+
+<h3>ঠিকানা</h3>
+
+<p>
+বুড়িমারী, পাটগ্রাম, লালমনিরহাট, বাংলাদেশ
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<footer>
+
+<p>
+<strong>মেসার্স রহিমা ট্রেডার্স</strong>
+</p>
+
+<p>
+পাথর ও বালু সরবরাহ • বুড়িমারী, পাটগ্রাম, লালমনিরহাট
+</p>
+
+<p>
+© 2026 সর্বস্বত্ব সংরক্ষিত
+</p>
+
+</footer>
+
+
+<script>
+
+/* PRODUCT CATEGORY + SIZE */
+
+const stoneCategories = [
+"Bhutan",
+"India",
+"Local",
+"Black"
+];
+
+const stoneSizes = [
+"5/8",
+"3/4",
+"3/4 Down",
+"1/2",
+"1/4"
+];
+
+
+const sandCategories = [
+"Red",
+"White"
+];
+
+const sandSizes = [
+"2.8",
+"2.5-6",
+"2.2-5",
+"আস্তর"
+];
+
+
+/* CHANGE CATEGORY AND SIZE */
+
+function changeOptions(){
+
+let product =
+document.getElementById("product").value;
+
+let category =
+document.getElementById("category");
+
+let size =
+document.getElementById("size");
+
+
+category.innerHTML = "";
+size.innerHTML = "";
+
+
+let categories;
+let sizes;
+
+
+if(product === "পাথর"){
+
+categories = stoneCategories;
+sizes = stoneSizes;
+
+}else{
+
+categories = sandCategories;
+sizes = sandSizes;
+
+}
+
+
+/* CATEGORY */
+
+categories.forEach(function(item){
+
+let option =
+document.createElement("option");
+
+option.value = item;
+option.textContent = item;
+
+category.appendChild(option);
+
+});
+
+
+/* SIZE */
+
+sizes.forEach(function(item){
+
+let option =
+document.createElement("option");
+
+option.value = item;
+option.textContent = item;
+
+size.appendChild(option);
+
+});
+
+}
+
+
+/* WHATSAPP ORDER */
+
+function sendOrder(){
+
+let name =
+document.getElementById("name").value.trim();
+
+let phone =
+document.getElementById("phone").value.trim();
+
+let product =
+document.getElementById("product").value;
+
+let category =
+document.getElementById("category").value;
+
+let size =
+document.getElementById("size").value;
+
+let quantity =
+document.getElementById("quantity").value;
+
+let location =
+document.getElementById("location").value.trim();
+
+let message =
+document.getElementById("message").value.trim();
+
+
+if(
+name === "" ||
+phone === "" ||
+location === ""
+){
+
+alert(
+"দয়া করে নাম, মোবাইল নম্বর এবং সরবরাহের স্থান পূরণ করুন।"
+);
+
+return;
+
+}
+
+
+let text =
+"মেসার্স রহিমা ট্রেডার্স - নতুন অর্ডার\n\n" +
+
+"👤 নাম: " + name + "\n" +
+
+"📱 মোবাইল: " + phone + "\n" +
+
+"🛒 পণ্য: " + product + "\n" +
+
+"🏷️ ক্যাটাগরি: " + category + "\n" +
+
+"📏 সাইজ: " + size + "\n" +
+
+"📦 পরিমাণ: " + quantity + "\n" +
+
+"📍 সরবরাহের স্থান: " + location + "\n" +
+
+"📝 অতিরিক্ত তথ্য: " + message;
+
+
+let whatsappURL =
+"https://wa.me/8801715710115?text="
++
+encodeURIComponent(text);
+
+
+window.open(
+whatsappURL,
+"_blank"
+);
+
+}
+
+
+/* LOAD STONE OPTIONS FIRST */
+
+changeOptions();
+
+</script>
+
+</body>
+</html>
