@@ -238,6 +238,7 @@ border:1px solid #ccd8d2;
 border-radius:8px;
 font-size:16px;
 font-family:inherit;
+background:white;
 }
 
 .form-group textarea{
@@ -374,6 +375,8 @@ height:210px;
 </header>
 
 
+<!-- HERO -->
+
 <section class="hero" id="home">
 
 <div class="badge">
@@ -405,6 +408,8 @@ target="_blank">
 </section>
 
 
+<!-- PRODUCTS -->
+
 <section class="section" id="products">
 
 <h2 class="title">
@@ -429,7 +434,7 @@ alt="পাথর">
 </h3>
 
 <p>
-বিভিন্ন নির্মাণকাজের জন্য প্রয়োজনীয় পাথর সরবরাহ করা হয়। বড় অর্ডারের জন্য সরাসরি যোগাযোগ করুন।
+বিভিন্ন নির্মাণকাজের জন্য প্রয়োজনীয় পাথর সরবরাহ করা হয়।
 </p>
 
 <span class="price">
@@ -450,7 +455,7 @@ alt="বালু">
 </h3>
 
 <p>
-নির্মাণকাজের প্রয়োজন অনুযায়ী বালু সরবরাহ করা হয়। পাইকারি ও নিয়মিত অর্ডার গ্রহণ করা হয়।
+নির্মাণকাজের প্রয়োজন অনুযায়ী বালু সরবরাহ করা হয়।
 </p>
 
 <span class="price">
@@ -463,6 +468,8 @@ alt="বালু">
 
 </section>
 
+
+<!-- SERVICE -->
 
 <section class="section" id="service">
 
@@ -509,6 +516,8 @@ alt="বালু">
 
 </section>
 
+
+<!-- WHY US -->
 
 <section class="section" id="why">
 
@@ -561,6 +570,8 @@ alt="বালু">
 </section>
 
 
+<!-- ORDER FORM -->
+
 <section class="section order" id="order">
 
 <h2 class="title">
@@ -568,15 +579,18 @@ alt="বালু">
 </h2>
 
 <p class="subtitle">
-ফর্মটি পূরণ করে WhatsApp-এর মাধ্যমে অর্ডার পাঠান।
+ফর্মটি পূরণ করুন। আপনার তথ্য WhatsApp-এর মাধ্যমে আমাদের কাছে চলে যাবে।
 </p>
 
 <div class="order-box">
 
+
+<!-- NAME -->
+
 <div class="form-group">
 
 <label>
-আপনার নাম
+👤 আপনার নাম
 </label>
 
 <input
@@ -587,10 +601,12 @@ placeholder="আপনার নাম লিখুন">
 </div>
 
 
+<!-- PHONE -->
+
 <div class="form-group">
 
 <label>
-মোবাইল নম্বর
+📱 মোবাইল নম্বর
 </label>
 
 <input
@@ -601,10 +617,12 @@ placeholder="01XXXXXXXXX">
 </div>
 
 
+<!-- PRODUCT -->
+
 <div class="form-group">
 
 <label>
-পণ্য নির্বাচন করুন
+🛒 পণ্য নির্বাচন করুন
 </label>
 
 <select id="product">
@@ -626,24 +644,118 @@ placeholder="01XXXXXXXXX">
 </div>
 
 
+<!-- SIZE -->
+
 <div class="form-group">
 
 <label>
-পরিমাণ
+📏 পণ্যের সাইজ / ধরন
 </label>
 
-<input
-type="text"
-id="quantity"
-placeholder="যেমন: ১০ টন / ৫ ট্রাক">
+<select id="size">
+
+<option value="সাইজ/ধরন জানা নেই">
+সাইজ/ধরন জানা নেই
+</option>
+
+<option value="ছোট সাইজ">
+ছোট সাইজ
+</option>
+
+<option value="মাঝারি সাইজ">
+মাঝারি সাইজ
+</option>
+
+<option value="বড় সাইজ">
+বড় সাইজ
+</option>
+
+<option value="স্টোন চিপস">
+স্টোন চিপস
+</option>
+
+<option value="কংক্রিট পাথর">
+কংক্রিট পাথর
+</option>
+
+<option value="মোটা বালু">
+মোটা বালু
+</option>
+
+<option value="মাঝারি বালু">
+মাঝারি বালু
+</option>
+
+<option value="মিহি বালু">
+মিহি বালু
+</option>
+
+<option value="অন্যান্য">
+অন্যান্য
+</option>
+
+</select>
 
 </div>
 
 
+<!-- QUANTITY -->
+
 <div class="form-group">
 
 <label>
-সরবরাহের স্থান
+📦 পরিমাণ
+</label>
+
+<select id="quantity">
+
+<option value="১ টন">
+১ টন
+</option>
+
+<option value="৫ টন">
+৫ টন
+</option>
+
+<option value="১০ টন">
+১০ টন
+</option>
+
+<option value="২০ টন">
+২০ টন
+</option>
+
+<option value="১ ট্রাক">
+১ ট্রাক
+</option>
+
+<option value="২ ট্রাক">
+২ ট্রাক
+</option>
+
+<option value="৫ ট্রাক">
+৫ ট্রাক
+</option>
+
+<option value="১০ ট্রাক">
+১০ ট্রাক
+</option>
+
+<option value="অন্যান্য">
+অন্যান্য
+</option>
+
+</select>
+
+</div>
+
+
+<!-- LOCATION -->
+
+<div class="form-group">
+
+<label>
+📍 সরবরাহের স্থান
 </label>
 
 <input
@@ -654,10 +766,12 @@ placeholder="যেখানে পণ্য লাগবে">
 </div>
 
 
+<!-- MESSAGE -->
+
 <div class="form-group">
 
 <label>
-অতিরিক্ত তথ্য
+📝 অতিরিক্ত তথ্য
 </label>
 
 <textarea
@@ -680,79 +794,8 @@ onclick="sendOrder()">
 </section>
 
 
+<!-- CTA -->
+
 <section class="section">
 
-<div class="cta">
-
-<h2>
-পাথর বা বালুর দরকার?
-</h2>
-
-<p>
-দাম ও সরবরাহের তথ্য জানতে এখনই যোগাযোগ করুন।
-</p>
-
-<div class="buttons">
-
-<a class="btn primary"
-href="https://wa.me/8801715710115"
-target="_blank">
-💬 WhatsApp করুন
-</a>
-
-<a class="btn secondary"
-href="https://www.facebook.com/share/1DNaUmCP2K/"
-target="_blank">
-📘 Facebook Page
-</a>
-
-</div>
-
-</div>
-
-</section>
-
-
-<section class="contact">
-
-<div class="section" id="contact">
-
-<h2 class="title">
-যোগাযোগ করুন
-</h2>
-
-<p class="subtitle">
-অর্ডার, দাম ও সরবরাহ সম্পর্কে জানতে যোগাযোগ করুন।
-</p>
-
-<div class="contact-grid">
-
-
-<div class="contact-card">
-
-<div class="icon">📱</div>
-
-<h3>WhatsApp</h3>
-
-<p>
-<a href="https://wa.me/8801715710115"
-target="_blank">
-+8801715710115
-</a>
-</p>
-
-</div>
-
-
-<div class="contact-card">
-
-<div class="icon">📘</div>
-
-<h3>Facebook Page</h3>
-
-<p>
-<a href="https://www.facebook.com/share/1DNaUmCP2K/"
-target="_blank">
-আমাদের Facebook Page
-</a>
-</p>
+<div class="cta
