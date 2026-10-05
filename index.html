@@ -3,411 +3,389 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>মেসার্স রহিমা ট্রেডার্স | প্রোঃ মোঃ রোকনুজ্জামান রব পাথর ও বালু</title>
+
+<title>মেসার্স রহিমা ট্রেডার্স |প্রোঃ মোঃ রোকনুজ্জামান রব পাথর ও বালু সরবরাহ</title>
 
 <style>
-*{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
+
+*{
+box-sizing:border-box;
+margin:0;
+padding:0;
+}
 
 body{
 font-family:Arial,"Noto Sans Bengali",sans-serif;
 background:#f5f7f6;
-color:#17202a;
-line-height:1.7
+color:#222;
+line-height:1.6;
 }
 
 header{
-background:#075b3a;
+background:#087443;
 color:white;
-padding:15px 20px;
-position:sticky;
-top:0;
-z-index:100;
-box-shadow:0 3px 12px #0003
-}
-
-.nav{
-max-width:1100px;
-margin:auto;
+padding:15px 5%;
 display:flex;
 justify-content:space-between;
 align-items:center;
-gap:15px
+position:sticky;
+top:0;
+z-index:1000;
+box-shadow:0 2px 10px rgba(0,0,0,.15);
 }
 
 .logo{
-font-size:21px;
-font-weight:bold
+font-size:22px;
+font-weight:bold;
 }
 
 nav a{
 color:white;
 text-decoration:none;
-margin:0 7px;
-font-size:14px;
-font-weight:bold
+margin-left:20px;
+font-size:15px;
 }
 
-nav a:hover{color:#ffd34e}
+nav a:hover{
+text-decoration:underline;
+}
 
 .hero{
-background:linear-gradient(135deg,#064d31,#0b8055);
+background:linear-gradient(135deg,#087443,#0b9b5a);
 color:white;
+padding:70px 20px;
 text-align:center;
-padding:85px 20px
 }
 
 .hero h1{
-font-size:42px;
-margin-bottom:12px
+font-size:38px;
+margin-bottom:15px;
 }
 
 .hero p{
-font-size:19px;
-max-width:700px;
-margin:auto
-}
-
-.badge{
-display:inline-block;
-border:1px solid #ffffff55;
-padding:7px 15px;
-border-radius:30px;
-margin-bottom:18px
-}
-
-.buttons{
-display:flex;
-justify-content:center;
-gap:12px;
-flex-wrap:wrap;
-margin-top:25px
+font-size:18px;
+margin-bottom:25px;
 }
 
 .btn{
 display:inline-block;
-padding:13px 23px;
-border-radius:9px;
+background:#fff;
+color:#087443;
+padding:12px 24px;
+border-radius:8px;
 text-decoration:none;
 font-weight:bold;
-cursor:pointer;
-border:none
 }
 
-.primary{
-background:#ffd34e;
-color:#17202a
+section{
+padding:55px 5%;
 }
 
-.secondary{
-border:1px solid white;
-color:white;
-background:transparent
+.section-title{
+text-align:center;
+font-size:30px;
+margin-bottom:35px;
+color:#087443;
 }
 
-.section{
+.products{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:25px;
 max-width:1100px;
 margin:auto;
-padding:60px 20px
 }
 
-.title{
-text-align:center;
-color:#075b3a;
-font-size:30px;
-margin-bottom:10px
-}
-
-.subtitle{
-text-align:center;
-color:#667;
-margin-bottom:30px
-}
-
-.grid{
-display:grid;
-grid-template-columns:repeat(2,1fr);
-gap:24px
-}
-
-.card{
+.product-card{
 background:white;
-padding:22px;
-border-radius:16px;
-box-shadow:0 6px 22px #00000012;
-border:1px solid #e5ebe8;
-overflow:hidden
+border-radius:15px;
+overflow:hidden;
+box-shadow:0 5px 20px rgba(0,0,0,.10);
+padding-bottom:20px;
 }
 
-.card img{
-width:100%;
-height:230px;
-object-fit:cover;
-border-radius:12px;
-margin-bottom:15px
-}
-
-.card h3{
-color:#075b3a;
-font-size:23px;
-margin-bottom:8px
-}
-
-.service-grid{
+.product-images{
 display:grid;
-grid-template-columns:repeat(2,1fr);
-gap:20px
+grid-template-columns:repeat(3,1fr);
+gap:6px;
+padding:8px;
+}
+
+.product-images img{
+width:100%;
+height:180px;
+object-fit:cover;
+border-radius:10px;
+display:block;
+}
+
+.product-card h3{
+font-size:25px;
+color:#087443;
+padding:10px 18px 4px;
+}
+
+.product-card p{
+padding:0 18px;
+color:#555;
+}
+
+.info{
+padding:15px 18px;
+}
+
+.info strong{
+color:#087443;
+}
+
+.services{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px;
+max-width:1100px;
+margin:auto;
 }
 
 .service{
 background:white;
-padding:28px;
-border-radius:15px;
-box-shadow:0 5px 18px #0001
-}
-
-.icon{
-font-size:40px;
-margin-bottom:8px
-}
-
-.features{
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:18px
-}
-
-.feature{
-background:#075b3a;
-color:white;
 padding:25px;
-border-radius:14px;
-text-align:center
+border-radius:12px;
+text-align:center;
+box-shadow:0 4px 15px rgba(0,0,0,.08);
 }
 
-.order{
-background:#eaf5ef
+.service h3{
+color:#087443;
+margin-bottom:10px;
 }
 
 .order-box{
-max-width:650px;
+max-width:700px;
 margin:auto;
 background:white;
 padding:30px;
-border-radius:18px;
-box-shadow:0 6px 22px #0002
+border-radius:15px;
+box-shadow:0 5px 20px rgba(0,0,0,.10);
 }
 
 .form-group{
-margin-bottom:17px
+margin-bottom:15px;
 }
 
 .form-group label{
 display:block;
 font-weight:bold;
-margin-bottom:6px;
-color:#075b3a
+margin-bottom:5px;
 }
 
 .form-group input,
 .form-group select,
 .form-group textarea{
 width:100%;
-padding:13px;
-border:1px solid #ccd8d2;
-border-radius:8px;
-font-size:16px;
-font-family:inherit;
-background:white
+padding:12px;
+border:1px solid #ccc;
+border-radius:7px;
+font-size:15px;
 }
 
 .form-group textarea{
-height:110px;
-resize:vertical
+height:100px;
+resize:vertical;
 }
 
-.order-btn{
+.whatsapp-btn{
 width:100%;
-background:#128c55;
-color:white;
-font-size:17px;
-padding:14px;
 border:none;
-border-radius:9px;
+background:#25D366;
+color:white;
+padding:14px;
+font-size:17px;
 font-weight:bold;
-cursor:pointer
+border-radius:8px;
+cursor:pointer;
 }
 
-.order-btn:hover{
-background:#075b3a
+.whatsapp-btn:hover{
+background:#1da851;
 }
 
 .contact{
-background:#eaf5ef
-}
-
-.contact-grid{
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:20px
-}
-
-.contact-card{
-background:white;
-padding:25px;
-border-radius:15px;
-text-align:center;
-box-shadow:0 5px 18px #0001
-}
-
-.contact-card a{
-color:#075b3a;
-font-weight:bold;
-text-decoration:none
-}
-
-.cta{
-background:linear-gradient(135deg,#0b8055,#064d31);
+background:#087443;
 color:white;
 text-align:center;
-border-radius:20px;
-padding:45px 20px
 }
 
-.cta h2{
-font-size:30px;
-margin-bottom:8px
+.contact h2{
+margin-bottom:15px;
+}
+
+.contact a{
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
+
+.facebook-btn{
+display:inline-block;
+margin-top:15px;
+background:#1877F2;
+padding:10px 20px;
+border-radius:7px;
 }
 
 footer{
-background:#10251d;
+background:#064f2e;
 color:white;
 text-align:center;
-padding:28px 20px
+padding:20px;
+font-size:14px;
 }
 
-@media(max-width:750px){
+@media(max-width:800px){
 
-.nav{flex-direction:column}
-
-nav{text-align:center}
+header{
+flex-direction:column;
+gap:10px;
+}
 
 nav a{
-font-size:13px;
-margin:0 3px
+margin:0 7px;
 }
 
-.hero{padding:65px 18px}
-
-.hero h1{font-size:31px}
-
-.hero p{font-size:17px}
-
-.grid,
-.service-grid,
-.features,
-.contact-grid{
-grid-template-columns:1fr
+.hero h1{
+font-size:30px;
 }
 
-.section{padding:50px 18px}
+.products{
+grid-template-columns:1fr;
+}
 
-.card img{height:210px}
+.services{
+grid-template-columns:1fr;
+}
+
+.product-images img{
+height:120px;
+}
+
+section{
+padding:40px 4%;
+}
 
 }
+
 </style>
 </head>
 
 <body>
 
 <header>
-<div class="nav">
 
 <div class="logo">
 মেসার্স রহিমা ট্রেডার্স
+ প্রোঃ মোঃ রোকনুজ্জামান রব
 </div>
 
 <nav>
 <a href="#home">হোম</a>
 <a href="#products">পণ্য</a>
-<a href="#service">সেবা</a>
 <a href="#order">অর্ডার</a>
 <a href="#contact">যোগাযোগ</a>
 </nav>
 
-</div>
 </header>
 
 
-<!-- HERO -->
-
 <section class="hero" id="home">
-
-<div class="badge">
-🪨 পাথর • 🏖️ বালু • 🚚 সরবরাহ
-</div>
 
 <h1>মেসার্স রহিমা ট্রেডার্স</h1>
  প্রোঃ মোঃ রোকনুজ্জামান রব
 <p>
- বুড়িমারী, পাটগ্রাম থেকে পাথর ও বালু সরবরাহের বিশ্বস্ত ব্যবসায়িক ঠিকানা।
+মানসম্মত পাথর ও বালু সরবরাহকারী
 </p>
 
-<div class="buttons">
+<p>
+ বুড়িমারী, পাটগ্রাম, লালমনিরহাট থেকে ঢাকা ও আশেপাশের এলাকায় সরবরাহ
+</p>
 
-<a class="btn primary" href="#order">
-📝 অর্ডার করুন
+<a href="#order" class="btn">
+অর্ডার করুন
 </a>
-
-<a class="btn secondary"
-href="https://wa.me/8801715710115"
-target="_blank">
-💬 WhatsApp
-</a>
-
-</div>
 
 </section>
 
 
-<!-- PRODUCTS -->
+<section id="products">
 
-<section class="section" id="products">
+<h2 class="section-title">
+আমাদের পণ্য
+</h2>
 
-<h2 class="title">আমাদের পণ্য</h2>
+<div class="products">
 
-<p class="subtitle">
-নির্মাণকাজের প্রয়োজন অনুযায়ী পাথর ও বালু সরবরাহ করা হয়।
-</p>
 
-<div class="grid">
+<!-- পাথর -->
 
-<div class="card">
+<div class="product-card">
 
-<img
-src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=900&q=80"
-alt="পাথর">
+<div class="product-images">
+
+<img src="1791169754506.jpg" alt="পাথর">
+<img src="1791169780698.jpg" alt="পাথর">
+<img src="1791169793768.jpg" alt="পাথর">
+
+</div>
 
 <h3>🪨 পাথর</h3>
 
 <p>
-Bhutan, India, Local ও Black ক্যাটাগরির বিভিন্ন সাইজের পাথর।
+বিভিন্ন সাইজ ও ক্যাটাগরির পাথর সরবরাহ করা হয়।
 </p>
+
+<div class="info">
+
+<strong>ক্যাটাগরি:</strong>
+Bhutan, India, Local, Black
+
+<br>
+
+<strong>সাইজ:</strong>
+5/8, 3/4, 3/4 Down, 1/2, 1/4
+
+</div>
 
 </div>
 
 
-<div class="card">
+<!-- বালু -->
 
-<img
-src="https://images.unsplash.com/photo-1586864387967-d02ef85d93e8?auto=format&fit=crop&w=900&q=80"
-alt="বালু">
+<div class="product-card">
+
+<div class="product-images">
+
+<img src="1791169694552.jpg" alt="বালু">
+<img src="1791169721119.jpg" alt="বালু">
+<img src="1791169742174.jpg" alt="বালু">
+
+</div>
 
 <h3>🏖️ বালু</h3>
 
 <p>
-Red ও White ক্যাটাগরির বিভিন্ন সাইজের বালু সরবরাহ করা হয়।
+বিভিন্ন মান ও সাইজের বালু সরবরাহ করা হয়।
 </p>
+
+<div class="info">
+
+<strong>ক্যাটাগরি:</strong>
+Red, White
+
+<br>
+
+<strong>সাইজ:</strong>
+2.8, 2.5-6, 2.2-5, আস্তর
+
+</div>
 
 </div>
 
@@ -416,145 +394,96 @@ Red ও White ক্যাটাগরির বিভিন্ন সাইজ�
 </section>
 
 
-<!-- SERVICE -->
+<section>
 
-<section class="section" id="service">
-
-<h2 class="title">আমাদের সেবা</h2>
-
-<p class="subtitle">
-আপনার প্রয়োজন অনুযায়ী সরবরাহ ব্যবস্থায় সহযোগিতা।
-</p>
-
-<div class="service-grid">
-
-<div class="service">
-
-<div class="icon">🚚</div>
-
-<h3>পণ্য সরবরাহ</h3>
-
-<p>
- বুড়িমারী, পাটগ্রাম থেকে প্রয়োজন অনুযায়ী পাথর ও বালু সরবরাহের ব্যবস্থা করা হয়।
-</p>
-
-</div>
-
-
-<div class="service">
-
-<div class="icon">🤝</div>
-
-<h3>পাইকারি অর্ডার</h3>
-
-<p>
-বড় পরিমাণের অর্ডার এবং নিয়মিত সরবরাহের জন্য যোগাযোগ করুন।
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- WHY US -->
-
-<section class="section" id="why">
-
-<h2 class="title">
-কেন আমাদের সঙ্গে কাজ করবেন?
+<h2 class="section-title">
+আমাদের সেবা
 </h2>
 
-<div class="features">
+<div class="services">
 
-<div class="feature">
-<div class="icon">✅</div>
-<h3>বিশ্বস্ততা</h3>
-<p>ব্যবসায়িক যোগাযোগে স্বচ্ছতা ও দায়িত্বশীলতা।</p>
+<div class="service">
+<h3>🚚 সরবরাহ</h3>
+<p>
+ঢাকা ও আশেপাশের এলাকায় পাথর ও বালু সরবরাহ।
+</p>
 </div>
 
-<div class="feature">
-<div class="icon">🚛</div>
-<h3>সরবরাহ</h3>
-<p>প্রয়োজন অনুযায়ী পণ্য সরবরাহের ব্যবস্থা।</p>
+<div class="service">
+<h3>📦 বড় অর্ডার</h3>
+<p>
+ট্রাক ও বড় পরিমাণের অর্ডার নেওয়া হয়।
+</p>
 </div>
 
-<div class="feature">
-<div class="icon">📦</div>
-<h3>বড় অর্ডার</h3>
-<p>পাইকারি ও নিয়মিত অর্ডার গ্রহণ করা হয়।</p>
+<div class="service">
+<h3>📱 সহজ অর্ডার</h3>
+<p>
+WhatsApp-এর মাধ্যমে সহজেই অর্ডার করতে পারবেন।
+</p>
 </div>
 
 </div>
+
 </section>
 
 
-<!-- ORDER -->
+<section id="order">
 
-<section class="section order" id="order">
-
-<h2 class="title">
-📝 অর্ডার / দাম জানতে
+<h2 class="section-title">
+অর্ডার করুন
 </h2>
-
-<p class="subtitle">
-পণ্য, ক্যাটাগরি, সাইজ ও পরিমাণ নির্বাচন করে অর্ডার পাঠান।
-</p>
 
 <div class="order-box">
 
-
-<!-- NAME -->
-
 <div class="form-group">
 
-<label>👤 আপনার নাম</label>
+<label>আপনার নাম</label>
 
 <input
 type="text"
 id="name"
-placeholder="আপনার নাম লিখুন">
+placeholder="আপনার নাম লিখুন"
+>
 
 </div>
 
 
-<!-- PHONE -->
-
 <div class="form-group">
 
-<label>📱 মোবাইল নম্বর</label>
+<label>মোবাইল নম্বর</label>
 
 <input
 type="tel"
 id="phone"
-placeholder="01XXXXXXXXX">
+placeholder="01XXXXXXXXX"
+>
 
 </div>
 
 
-<!-- PRODUCT -->
-
 <div class="form-group">
 
-<label>🛒 পণ্য নির্বাচন করুন</label>
+<label>পণ্য</label>
 
 <select id="product" onchange="changeOptions()">
 
-<option value="পাথর">🪨 পাথর</option>
+<option value="পাথর">
+পাথর
+</option>
 
-<option value="বালু">🏖️ বালু</option>
+<option value="বালু">
+বালু
+</option>
 
 </select>
 
 </div>
 
 
-<!-- CATEGORY -->
-
 <div class="form-group">
 
-<label>🏷️ ক্যাটাগরি</label>
+<label>ক্যাটাগরি</label>
 
 <select id="category">
 </select>
@@ -562,11 +491,9 @@ placeholder="01XXXXXXXXX">
 </div>
 
 
-<!-- SIZE -->
-
 <div class="form-group">
 
-<label>📏 সাইজ</label>
+<label>সাইজ</label>
 
 <select id="size">
 </select>
@@ -574,62 +501,57 @@ placeholder="01XXXXXXXXX">
 </div>
 
 
-<!-- QUANTITY -->
-
 <div class="form-group">
 
-<label>📦 পরিমাণ</label>
+<label>পরিমাণ</label>
 
 <select id="quantity">
 
-<option value="১ টন">১ টন</option>
-<option value="৫ টন">৫ টন</option>
-<option value="১০ টন">১০ টন</option>
-<option value="২০ টন">২০ টন</option>
-<option value="১ ট্রাক">১ ট্রাক</option>
-<option value="২ ট্রাক">২ ট্রাক</option>
-<option value="৫ ট্রাক">৫ ট্রাক</option>
-<option value="১০ ট্রাক">১০ ট্রাক</option>
-<option value="অন্যান্য">অন্যান্য</option>
+<option>1 টন</option>
+<option>5 টন</option>
+<option>10 টন</option>
+<option>20 টন</option>
+<option>1 ট্রাক</option>
+<option>2 ট্রাক</option>
+<option>5 ট্রাক</option>
+<option>10 ট্রাক</option>
+<option>অন্যান্য</option>
 
 </select>
 
 </div>
 
 
-<!-- LOCATION -->
-
 <div class="form-group">
 
-<label>📍 সরবরাহের স্থান</label>
+<label>সরবরাহের স্থান</label>
 
 <input
 type="text"
 id="location"
-placeholder="যেখানে পণ্য লাগবে">
+placeholder="যেখানে মাল লাগবে"
+>
 
 </div>
 
 
-<!-- MESSAGE -->
-
 <div class="form-group">
 
-<label>📝 অতিরিক্ত তথ্য</label>
+<label>অতিরিক্ত তথ্য</label>
 
 <textarea
 id="message"
-placeholder="আপনার প্রয়োজন বা প্রশ্ন লিখুন"></textarea>
+placeholder="প্রয়োজনীয় তথ্য লিখুন"
+></textarea>
 
 </div>
 
 
 <button
-class="order-btn"
-onclick="sendOrder()">
-
-💬 WhatsApp-এ অর্ডার পাঠান
-
+class="whatsapp-btn"
+onclick="sendOrder()"
+>
+📱 WhatsApp-এ অর্ডার পাঠান
 </button>
 
 </div>
@@ -637,124 +559,44 @@ onclick="sendOrder()">
 </section>
 
 
-<!-- CTA -->
+<section class="contact" id="contact">
 
-<section class="section">
-
-<div class="cta">
-
-<h2>পাথর বা বালুর দরকার?</h2>
+<h2>
+যোগাযোগ করুন
+</h2>
 
 <p>
-দাম ও সরবরাহের তথ্য জানতে এখনই যোগাযোগ করুন।
+📱 WhatsApp:
+<a href="https://wa.me/8801715710115" target="_blank">
+01715710115
+</a>
 </p>
 
-<div class="buttons">
+<p>
+📍বুড়িমারী, পাটগ্রাম, লালমনিরহাট
+</p>
 
-<a class="btn primary"
-href="https://wa.me/8801715710115"
-target="_blank">
-💬 WhatsApp করুন
-</a>
-
-<a class="btn secondary"
+<a
+class="facebook-btn"
 href="https://www.facebook.com/share/1DNaUmCP2K/"
-target="_blank">
-📘 Facebook Page
+target="_blank"
+>
+Facebook Page
 </a>
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- CONTACT -->
-
-<section class="contact">
-
-<div class="section" id="contact">
-
-<h2 class="title">যোগাযোগ করুন</h2>
-
-<p class="subtitle">
-অর্ডার, দাম ও সরবরাহ সম্পর্কে জানতে যোগাযোগ করুন।
-</p>
-
-<div class="contact-grid">
-
-<div class="contact-card">
-
-<div class="icon">📱</div>
-
-<h3>WhatsApp</h3>
-
-<p>
-<a href="https://wa.me/8801715710115"
-target="_blank">
-+8801715710115
-</a>
-</p>
-
-</div>
-
-
-<div class="contact-card">
-
-<div class="icon">📘</div>
-
-<h3>Facebook Page</h3>
-
-<p>
-<a href="https://www.facebook.com/share/1DNaUmCP2K/"
-target="_blank">
-আমাদের Facebook Page
-</a>
-</p>
-
-</div>
-
-
-<div class="contact-card">
-
-<div class="icon">📍</div>
-
-<h3>ঠিকানা</h3>
-
-<p>
-বুড়িমারী, পাটগ্রাম, লালমনিরহাট, বাংলাদেশ
-</p>
-
-</div>
-
-</div>
-
-</div>
 
 </section>
 
 
 <footer>
 
-<p>
-<strong>মেসার্স রহিমা ট্রেডার্স</strong>
-</p>
-
-<p>
-পাথর ও বালু সরবরাহ • বুড়িমারী, পাটগ্রাম, লালমনিরহাট
-</p>
-
-<p>
-© 2026 সর্বস্বত্ব সংরক্ষিত
-</p>
+© 2026 মেসার্স রহিমা ট্রেডার্স
+<br>
+পাথর ও বালু সরবরাহ
 
 </footer>
 
 
 <script>
-
-/* PRODUCT CATEGORY + SIZE */
 
 const stoneCategories = [
 "Bhutan",
@@ -771,7 +613,6 @@ const stoneSizes = [
 "1/4"
 ];
 
-
 const sandCategories = [
 "Red",
 "White"
@@ -785,8 +626,6 @@ const sandSizes = [
 ];
 
 
-/* CHANGE CATEGORY AND SIZE */
-
 function changeOptions(){
 
 let product =
@@ -798,14 +637,11 @@ document.getElementById("category");
 let size =
 document.getElementById("size");
 
-
 category.innerHTML = "";
 size.innerHTML = "";
 
-
 let categories;
 let sizes;
-
 
 if(product === "পাথর"){
 
@@ -820,8 +656,6 @@ sizes = sandSizes;
 }
 
 
-/* CATEGORY */
-
 categories.forEach(function(item){
 
 let option =
@@ -834,8 +668,6 @@ category.appendChild(option);
 
 });
 
-
-/* SIZE */
 
 sizes.forEach(function(item){
 
@@ -851,8 +683,6 @@ size.appendChild(option);
 
 }
 
-
-/* WHATSAPP ORDER */
 
 function sendOrder(){
 
@@ -897,6 +727,7 @@ return;
 
 
 let text =
+
 "মেসার্স রহিমা ট্রেডার্স - নতুন অর্ডার\n\n" +
 
 "👤 নাম: " + name + "\n" +
@@ -917,8 +748,11 @@ let text =
 
 
 let whatsappURL =
+
 "https://wa.me/8801715710115?text="
+
 +
+
 encodeURIComponent(text);
 
 
@@ -929,8 +763,6 @@ whatsappURL,
 
 }
 
-
-/* LOAD STONE OPTIONS FIRST */
 
 changeOptions();
 
