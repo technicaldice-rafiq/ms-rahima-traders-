@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>মেসার্স রহিমা ট্রেডার্স</title>
+<title>মেসার্স রহিমা ট্রেডার্স | পাথর ও বালু</title>
 
 <style>
 *{
@@ -30,7 +30,7 @@ color:white;
 padding:15px 20px;
 position:sticky;
 top:0;
-z-index:10;
+z-index:100;
 box-shadow:0 3px 12px #0003;
 }
 
@@ -44,7 +44,7 @@ gap:15px;
 }
 
 .logo{
-font-size:22px;
+font-size:21px;
 font-weight:bold;
 }
 
@@ -64,16 +64,16 @@ color:#ffd34e;
 background:linear-gradient(135deg,#064d31,#0b8055);
 color:white;
 text-align:center;
-padding:90px 20px;
+padding:85px 20px;
 }
 
 .hero h1{
-font-size:44px;
+font-size:42px;
 margin-bottom:12px;
 }
 
 .hero p{
-font-size:20px;
+font-size:19px;
 max-width:700px;
 margin:auto;
 }
@@ -91,7 +91,7 @@ display:flex;
 justify-content:center;
 gap:12px;
 flex-wrap:wrap;
-margin-top:28px;
+margin-top:25px;
 }
 
 .btn{
@@ -100,6 +100,8 @@ padding:13px 23px;
 border-radius:9px;
 text-decoration:none;
 font-weight:bold;
+cursor:pointer;
+border:none;
 }
 
 .primary{
@@ -110,6 +112,7 @@ color:#17202a;
 .secondary{
 border:1px solid white;
 color:white;
+background:transparent;
 }
 
 .section{
@@ -139,16 +142,48 @@ gap:24px;
 
 .card{
 background:white;
-padding:30px;
+padding:22px;
 border-radius:16px;
 box-shadow:0 6px 22px #00000012;
 border:1px solid #e5ebe8;
+overflow:hidden;
+}
+
+.card img{
+width:100%;
+height:230px;
+object-fit:cover;
+border-radius:12px;
+margin-bottom:15px;
 }
 
 .card h3{
 color:#075b3a;
-font-size:22px;
+font-size:23px;
 margin-bottom:8px;
+}
+
+.price{
+display:inline-block;
+background:#eaf5ef;
+color:#075b3a;
+padding:5px 12px;
+border-radius:20px;
+font-weight:bold;
+margin-top:10px;
+}
+
+.service-grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:20px;
+}
+
+.service{
+background:white;
+padding:28px;
+border-radius:15px;
+box-shadow:0 5px 18px #0001;
 }
 
 .icon{
@@ -168,6 +203,62 @@ color:white;
 padding:25px;
 border-radius:14px;
 text-align:center;
+}
+
+.order{
+background:#eaf5ef;
+}
+
+.order-box{
+max-width:650px;
+margin:auto;
+background:white;
+padding:30px;
+border-radius:18px;
+box-shadow:0 6px 22px #0002;
+}
+
+.form-group{
+margin-bottom:17px;
+}
+
+.form-group label{
+display:block;
+font-weight:bold;
+margin-bottom:6px;
+color:#075b3a;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea{
+width:100%;
+padding:13px;
+border:1px solid #ccd8d2;
+border-radius:8px;
+font-size:16px;
+font-family:inherit;
+}
+
+.form-group textarea{
+height:110px;
+resize:vertical;
+}
+
+.order-btn{
+width:100%;
+background:#128c55;
+color:white;
+font-size:17px;
+padding:14px;
+border:none;
+border-radius:9px;
+font-weight:bold;
+cursor:pointer;
+}
+
+.order-btn:hover{
+background:#075b3a;
 }
 
 .contact{
@@ -226,15 +317,15 @@ text-align:center;
 
 nav a{
 font-size:13px;
-margin:0 4px;
+margin:0 3px;
 }
 
 .hero{
-padding:70px 18px;
+padding:65px 18px;
 }
 
 .hero h1{
-font-size:32px;
+font-size:31px;
 }
 
 .hero p{
@@ -242,6 +333,7 @@ font-size:17px;
 }
 
 .grid,
+.service-grid,
 .features,
 .contact-grid{
 grid-template-columns:1fr;
@@ -249,6 +341,10 @@ grid-template-columns:1fr;
 
 .section{
 padding:50px 18px;
+}
+
+.card img{
+height:210px;
 }
 
 }
@@ -269,7 +365,7 @@ padding:50px 18px;
 <a href="#home">হোম</a>
 <a href="#products">পণ্য</a>
 <a href="#service">সেবা</a>
-<a href="#why">কেন আমরা</a>
+<a href="#order">অর্ডার</a>
 <a href="#contact">যোগাযোগ</a>
 </nav>
 
@@ -294,12 +390,12 @@ padding:50px 18px;
 
 <div class="buttons">
 
-<a class="btn primary" href="#contact">
-📞 অর্ডার / যোগাযোগ
+<a class="btn primary" href="#order">
+📝 অর্ডার করুন
 </a>
 
 <a class="btn secondary"
-href="https://wa.me/0171005710115"
+href="https://wa.me/88017100570115"
 target="_blank">
 💬 WhatsApp
 </a>
@@ -321,32 +417,45 @@ target="_blank">
 
 <div class="grid">
 
+
 <div class="card">
 
-<div class="icon">🪨</div>
+<img
+src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=900&q=80"
+alt="পাথর">
 
 <h3>
-পাথর
+🪨 পাথর
 </h3>
 
 <p>
 বিভিন্ন নির্মাণকাজের জন্য প্রয়োজনীয় পাথর সরবরাহ করা হয়। বড় অর্ডারের জন্য সরাসরি যোগাযোগ করুন।
 </p>
 
+<span class="price">
+দাম জানতে যোগাযোগ করুন
+</span>
+
 </div>
 
 
 <div class="card">
 
-<div class="icon">🏖️</div>
+<img
+src="https://images.unsplash.com/photo-1586864387967-d02ef85d93e8?auto=format&fit=crop&w=900&q=80"
+alt="বালু">
 
 <h3>
-বালু
+🏖️ বালু
 </h3>
 
 <p>
 নির্মাণকাজের প্রয়োজন অনুযায়ী বালু সরবরাহ করা হয়। পাইকারি ও নিয়মিত অর্ডার গ্রহণ করা হয়।
 </p>
+
+<span class="price">
+দাম জানতে যোগাযোগ করুন
+</span>
 
 </div>
 
@@ -365,9 +474,9 @@ target="_blank">
 আপনার প্রয়োজন অনুযায়ী সরবরাহ ব্যবস্থায় সহযোগিতা।
 </p>
 
-<div class="grid">
+<div class="service-grid">
 
-<div class="card">
+<div class="service">
 
 <div class="icon">🚚</div>
 
@@ -382,7 +491,7 @@ target="_blank">
 </div>
 
 
-<div class="card">
+<div class="service">
 
 <div class="icon">🤝</div>
 
@@ -413,9 +522,7 @@ target="_blank">
 
 <div class="icon">✅</div>
 
-<h3>
-বিশ্বস্ততা
-</h3>
+<h3>বিশ্বস্ততা</h3>
 
 <p>
 ব্যবসায়িক যোগাযোগে স্বচ্ছতা ও দায়িত্বশীলতা।
@@ -428,9 +535,7 @@ target="_blank">
 
 <div class="icon">🚛</div>
 
-<h3>
-সরবরাহ
-</h3>
+<h3>সরবরাহ</h3>
 
 <p>
 প্রয়োজন অনুযায়ী পণ্য সরবরাহের ব্যবস্থা।
@@ -443,15 +548,132 @@ target="_blank">
 
 <div class="icon">📦</div>
 
-<h3>
-বড় অর্ডার
-</h3>
+<h3>বড় অর্ডার</h3>
 
 <p>
 পাইকারি ও নিয়মিত অর্ডার গ্রহণ করা হয়।
 </p>
 
 </div>
+
+</div>
+
+</section>
+
+
+<section class="section order" id="order">
+
+<h2 class="title">
+📝 অর্ডার / দাম জানতে
+</h2>
+
+<p class="subtitle">
+ফর্মটি পূরণ করে WhatsApp-এর মাধ্যমে অর্ডার পাঠান।
+</p>
+
+<div class="order-box">
+
+<div class="form-group">
+
+<label>
+আপনার নাম
+</label>
+
+<input
+type="text"
+id="name"
+placeholder="আপনার নাম লিখুন">
+
+</div>
+
+
+<div class="form-group">
+
+<label>
+মোবাইল নম্বর
+</label>
+
+<input
+type="tel"
+id="phone"
+placeholder="01XXXXXXXXX">
+
+</div>
+
+
+<div class="form-group">
+
+<label>
+পণ্য নির্বাচন করুন
+</label>
+
+<select id="product">
+
+<option value="পাথর">
+🪨 পাথর
+</option>
+
+<option value="বালু">
+🏖️ বালু
+</option>
+
+<option value="পাথর ও বালু">
+🪨 পাথর ও বালু
+</option>
+
+</select>
+
+</div>
+
+
+<div class="form-group">
+
+<label>
+পরিমাণ
+</label>
+
+<input
+type="text"
+id="quantity"
+placeholder="যেমন: ১০ টন / ৫ ট্রাক">
+
+</div>
+
+
+<div class="form-group">
+
+<label>
+সরবরাহের স্থান
+</label>
+
+<input
+type="text"
+id="location"
+placeholder="যেখানে পণ্য লাগবে">
+
+</div>
+
+
+<div class="form-group">
+
+<label>
+অতিরিক্ত তথ্য
+</label>
+
+<textarea
+id="message"
+placeholder="আপনার প্রয়োজন বা প্রশ্ন লিখুন"></textarea>
+
+</div>
+
+
+<button
+class="order-btn"
+onclick="sendOrder()">
+
+💬 WhatsApp-এ অর্ডার পাঠান
+
+</button>
 
 </div>
 
@@ -473,7 +695,7 @@ target="_blank">
 <div class="buttons">
 
 <a class="btn primary"
-href="https://wa.me/0171005710115"
+href="https://wa.me/88017100570115"
 target="_blank">
 💬 WhatsApp করুন
 </a>
@@ -510,12 +732,10 @@ target="_blank">
 
 <div class="icon">📱</div>
 
-<h3>
-WhatsApp
-</h3>
+<h3>WhatsApp</h3>
 
 <p>
-<a href="https://wa.me/+8801715710115"
+<a href="https://wa.me/880171570115"
 target="_blank">
 +8801715710115
 </a>
@@ -528,9 +748,7 @@ target="_blank">
 
 <div class="icon">📘</div>
 
-<h3>
-Facebook Page
-</h3>
+<h3>Facebook Page</h3>
 
 <p>
 <a href="https://www.facebook.com/share/1DNaUmCP2K/"
@@ -538,46 +756,3 @@ target="_blank">
 আমাদের Facebook Page
 </a>
 </p>
-
-</div>
-
-
-<div class="contact-card">
-
-<div class="icon">📍</div>
-
-<h3>
-ঠিকানা
-</h3>
-
-<p>
-পাটগ্রাম, লালমনিরহাট, বাংলাদেশ
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-<footer>
-
-<p>
-<strong>মেসার্স রহিমা ট্রেডার্স</strong>
-</p>
-
-<p>
-পাথর ও বালু সরবরাহ • পাটগ্রাম, লালমনিরহাট
-</p>
-
-<p>
-© 2026 সর্বস্বত্ব সংরক্ষিত
-</p>
-
-</footer>
-
-</body>
-</html>
